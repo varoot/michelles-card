@@ -21,7 +21,11 @@
 	<div class="card-floater">Hello, World</div>
 	<div class="card-main">
 		<ul>
-			<li><div class="card-block card-dear">Dear Michelle</div>
+			<li>
+				<div class="card-block card-dear">
+					<div>Dear Michelle</div>
+					<div><small>from Web Team</small></div>
+				</div>
 		<?php
 		shuffle($webteam);
 		for ($i = 0; $i < count($webteam); $i++)
