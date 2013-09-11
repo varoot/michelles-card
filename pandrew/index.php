@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div>
-		<!-- Your message here -->
+		This is Pandrew's Square
 	</div>
 
 	<!-- Javascript below -->
