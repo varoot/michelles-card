@@ -1,3 +1,9 @@
+@bgColor: #009163;
+
 body {
-	background: #009163;
+	background: @bgColor;
+	color: contrast(@bgColor, #222, #fff);
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px;
+	text-align: center;
 }
