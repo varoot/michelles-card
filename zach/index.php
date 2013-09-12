@@ -15,17 +15,26 @@
 	<script src="../js/vendor/less-1.4.2.min.js"></script>
 </head>
 <body>
-	<div>
-		<!-- Your message here -->
-	</div>
+	<div>♥</div>
+	<!-- <div>❤</div> -->
 
 	<!-- Javascript below -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-	<script src="js/plugins.js"></script>
+	<script src="../js/plugins.js"></script>
 	<script>
 		$(function() {
 			var topDoc = $(top.document);
+
+			var changeColor = function () {
+				var hex = Math.floor(Math.random() * 0xffffff)
+				document.body.style.background = '#'+ ('00000' + hex.toString(16)).slice(-6)
+				document.body.style.color = '#' + ('00000' + (0xffffff - hex).toString(16)).slice(-6)
+				
+				setTimeout(changeColor, 1000)
+			}
+
+			changeColor();
 		})
 	</script>
 </body>
