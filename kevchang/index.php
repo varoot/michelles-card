@@ -18,8 +18,8 @@
 	<div>
 		<!-- Your message here -->
 		Dear Michelle,<br/>
-		Thank you so much for your dedication to web team.  I haven't been on it for all that long, but it really has been a blessing to serve on web team with you~ I am encouraged to see you following God's call to return to Korea, regardless of the potential obstacles.  At the same time, having to 'send you off' saddens me~  
-		
+		Thank you so much for your dedication to web team.  I haven't been on it for all that long, but it really has been a blessing to serve on web team with you~ I am so encouraged to see you following God's call to return to Korea, regardless of the potential obstacles.  At the same time, having to 'send you off' saddens me~  
+		Anyways, Luke 12:32! :'D
 	</div>
 
 	<!-- Javascript below -->
