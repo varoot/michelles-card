@@ -11,22 +11,62 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet/less" type="text/css" href="style.less">
+	<link rel="stylesheet" type="text/css" href="jquery.tzineClock/jquery.tzineClock.css" />
 	<script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="../js/vendor/less-1.4.2.min.js"></script>
+	<style>
+		#fancyClock {
+			cursor: pointer;
+		}
+
+		#overlay, #overlay2, #overlay3, #overlay4 {
+			display: none;
+			font-size: 12px;
+		}
+
+		#countdown {
+			font-size: 12px;
+		}
+	</style>
 </head>
 <body>
-	<div>
-		<!-- Your message here -->
-	</div>
+	<div style='border:2px dashed green; width: 160px; height: 160px; padding: 4px'>
+		<div id='countdown'>Already counting down the days till when you come back...</div>
+		<div id='fancyClock' style="height:50px; width: 160px"></div>
+		<div id='overlay'>But why is the countdown so short?</div>
+		<div id='overlay2'>Cause we didn't want you to leave so we canceled your flight...</div>
+		<div id='overlay3'>Haha seriously though :) Safe trip! We'll miss you !!</div>
+		<div id='overlay4'>- Kevin Wu</div>
+	</div>		
 
 	<!-- Javascript below -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="jquery.tzineClock/jquery.tzineClock.js"></script>
 	<script src="../js/plugins.js"></script>
 	<script>
-		$(function() {
-			var topDoc = $(top.document);
-		})
+		// $(function() {
+		// 	var topDoc = $(top.document);
+		// })
+		$(document).ready(function(){
+			$('#fancyClock').tzineClock();
+			$('#fancyClock').hover(function(){
+				$('#fancyClock').css('background-color', '#fefdf2');
+				$('.clock').css('background-color', '#fefdf2');
+				$('.clock .bg, .clock .front').css('background-color', '#fefdf2');
+
+			}, function () {
+				$('#fancyClock').css('background-color', '#edece1');
+				$('.clock').css('background-color', '#edece1');
+				$('.clock .bg, .clock .front').css('background-color', '#edece1');
+			});
+			$('#fancyClock').click(function() {
+				$('#overlay').fadeIn().delay(2000).fadeOut('slow');
+				$('#overlay2').delay(3000).fadeIn().delay(2000).fadeOut('slow');
+				$('#overlay3').delay(6000).fadeIn().delay(2000).fadeOut('slow');
+				$('#overlay4').delay(9000).fadeIn().delay(2000).fadeOut('slow');
+			});
+		});
 	</script>
 </body>
 </html>
