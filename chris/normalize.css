@@ -88,7 +88,8 @@ textarea {
  * Address margins handled incorrectly in IE 6/7.
  */
 
-body {
+body,
+div {
     font-size: 25%;
     color:white;
     margin: 0;
