@@ -93,13 +93,13 @@ div {
     margin: 0;
     font-size: 30%;
     text-align: center;
-    transition-duration: 2s;
-    -webkit-transition-duration: 2s;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
     
 }
 
 body:hover,
-div:hover {
+div:hover { 
     opacity: 0;
     transform: rotate(180deg);
     -webkit-transform:rotate(180deg);
