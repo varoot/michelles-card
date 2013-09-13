@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/normalize.css">
-	<link rel="stylesheet/less" type="text/css" href="style.less">
+	<!-- <link rel="stylesheet/less" type="text/css" href="style.less"> -->
 	<script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="../js/vendor/less-1.4.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/><!-- never use less before-->
