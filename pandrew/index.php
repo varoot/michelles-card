@@ -16,7 +16,12 @@
 </head>
 <body>
 	<div>
-		This is Pandrew's Square
+	<p style="font-size:10px">
+		Thanks for serving faithfully in Web Team. I remember when you first joined that you shared about how God was challenging you to join the team.
+		You have truly blessed our team with your <b>compassion</b> and <b>patience</b> as well as your reminders 
+		 about the importance of <b>prayer</b> and <b>supporting</b> and <b>encouraging</b> one another.<br/><br/>
+<input type="button" onclick="myFunction()" value="Click Me!">
+</script>
 	</div>
 
 	<!-- Javascript below -->
@@ -27,6 +32,11 @@
 		$(function() {
 			var topDoc = $(top.document);
 		})
+		
+		function myFunction()
+		{
+			alert("Romans 8:28\n\n And we know that in all things God works for the good of those who love him, who have been called according to his purpose\n\nWe will miss you Michelle but I am confident that you will continue to be a blessing in Korea to your family and friends. Persevere, trust in God, and be More Than a Conqueror!");
+		}
 	</script>
 </body>
 </html>
