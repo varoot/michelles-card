@@ -95,6 +95,7 @@ div {
     text-align: center;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
+    color:white;
     
 }
 
@@ -212,10 +213,10 @@ hr {
  * Address styling not present in IE 6/7/8/9.
  */
 
-mark {
+/*mark {
     background: #ff0;
     color: #000;
-}
+}*/
 
 /**
  * Address margins set differently in IE 6/7.
