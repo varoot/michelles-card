@@ -17,7 +17,7 @@
 </head>
 <body>
 	<div>
-		Hey Michelle!
+		Hey Michelle! 
 		I'm so glad that I got to know you before you left even if it was only for a couple of months.
 		It was awesome to serve with you and I was really blessed by the heart that you have for people. 
 		You were an amazing older sister and really helped webteam feel like a family. I pray for safe travels 			
