@@ -35,7 +35,7 @@
 		var imageSize = 50;
 		var x = 0;
 		var y = 0;
-		var noOfDrops = 50;
+		var noOfDrops = 40;
 		var fallingDrops = [];
 
 		function draw() {
@@ -62,11 +62,17 @@
 				for (var i = 0; i < noOfDrops; i++) {
 					var fallingDr = new Object();
 					fallingDr["image"] =  new Image();
-					fallingDr.image.src = 'cookie.png';
-						
+					if(i%10)
+						fallingDr.image.src = 'cookie.png';
+					else
+						fallingDr.image.src = 'cake.png';	
+
 					fallingDr["x"] = Math.random() * (width + imageSize) - imageSize;
 					fallingDr["y"] = Math.random() * height - (imageSize / 2);
-					fallingDr["speed"] = 3 + Math.random() * 5;
+					if(i%10)
+						fallingDr["speed"] = 3 + Math.random() * 5;
+					else
+						fallingDr["speed"] = 3 + Math.random() * 2;
 					fallingDrops.push(fallingDr);
 				}
 			}
