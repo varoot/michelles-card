@@ -31,12 +31,11 @@
 </head>
 <body>
 	<div style='border:2px dashed green; width: 160px; height: 160px; padding: 4px'>
-		<div id='countdown'>Already counting down the days till when you come back...</div>
+		<div id='countdown'>Already counting down the seconds till when you come back...</div>
 		<div id='fancyClock' style="height:50px; width: 160px"></div>
 		<div id='overlay'>But why is the countdown so short?</div>
 		<div id='overlay2'>Cause we didn't want you to leave so we canceled your flight...</div>
 		<div id='overlay3'>Haha seriously though :) Safe trip! We'll miss you !!</div>
-		<div id='overlay4'>- Kevin Wu</div>
 	</div>		
 
 	<!-- Javascript below -->
@@ -64,7 +63,6 @@
 				$('#overlay').fadeIn().delay(2000).fadeOut('slow');
 				$('#overlay2').delay(3000).fadeIn().delay(2000).fadeOut('slow');
 				$('#overlay3').delay(6000).fadeIn().delay(2000).fadeOut('slow');
-				$('#overlay4').delay(9000).fadeIn().delay(2000).fadeOut('slow');
 			});
 		});
 	</script>

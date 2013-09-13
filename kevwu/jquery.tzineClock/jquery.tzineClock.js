@@ -94,15 +94,15 @@
 		
 			var currentTime = new Date();
 			var finalTime = new Date('September 14, 2013 14:45:00');
-			var diffTime = Math.abs(finalTime - currentTime);
+			var diffTime = finalTime - currentTime;
 			var h = Math.floor(diffTime / (60 * 60 * 1000)) % 24;
 			var m = Math.floor(diffTime / (60 * 1000)) % 60;
 			var s = Math.floor(diffTime / 1000) % 60;
-			
-			animation(gVars.green, s, 60);
-			animation(gVars.blue, m, 60);
-			animation(gVars.orange, h, 24);
-		
+			if (diffTime > 0) {
+				animation(gVars.green, s, 60);
+				animation(gVars.blue, m, 60);
+				animation(gVars.orange, h, 24);
+			}
 		},1000);
 	}
 	
@@ -116,17 +116,18 @@
 		if(current==0)
 		{
 			// Hiding the right half of the background:
-			// clock.rotateRight.hide();
+			clock.rotateRight.show();
 			clock.rotateLeft.show();
 			
 			// Resetting the rotation of the left part:
-			// rotateElement(clock.rotateLeft,0);
-			rotateElement(clock.rotateRight,180);
+			rotateElement(clock.rotateLeft,0);
 		}
 		
 		if(angle<=180)
 		{
 			// The left part is rotated, and the right is currently hidden:
+			clock.rotateRight.hide();
+			rotateElement(clock.rotateRight,0);
 			element = clock.rotateLeft;
 		}
 		else
