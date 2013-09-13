@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div>
-		<canvas id="canvasRegn" width="600" height="450"style="margin:100px;"></canvas>
+		<canvas id="canvasRegn" width="192" height="192"></canvas>
 	</div>
 
 	<!-- Javascript below -->
@@ -30,45 +30,48 @@
 		var ctx;
 		var imgBg;
 		var imgDrops;
+		var width = 192;
+		var height = 192;
+		var imageSize = 50;
 		var x = 0;
 		var y = 0;
 		var noOfDrops = 50;
 		var fallingDrops = [];
 
-	    function draw() {
-	        
-	        for (var i=0; i< noOfDrops; i++)
-	        {
-	        ctx.drawImage (fallingDrops[i].image, fallingDrops[i].x, fallingDrops[i].y); //The rain drop
+		function draw() {
+			// Clear background before redrawing
+			ctx.clearRect (0, 0, width, height);
+			for (var i=0; i< noOfDrops; i++)
+			{
+				ctx.drawImage (fallingDrops[i].image, fallingDrops[i].x, fallingDrops[i].y); //The rain drop
 
-	        fallingDrops[i].y += fallingDrops[i].speed; //Set the falling speed
-	        if (fallingDrops[i].y > 450) {  //Repeat the raindrop when it falls out of view
-	        fallingDrops[i].y = -25 //Account for the image size
-	        fallingDrops[i].x = Math.random() * 600;    //Make it appear randomly along the width    
-	        }
-	        
-	        }
-	    }
+				fallingDrops[i].y += fallingDrops[i].speed; //Set the falling speed
+				if (fallingDrops[i].y > height) {  //Repeat the raindrop when it falls out of view
+					fallingDrops[i].y = -imageSize //Account for the image size
+					fallingDrops[i].x = Math.random() * (width + imageSize) - imageSize;    //Make it appear randomly along the width    
+				}			
+			}
+		}
 
-	    function setup() {
-	        var canvas = document.getElementById('canvasRegn');
+		function setup() {
+			var canvas = document.getElementById('canvasRegn');
 
-	        if (canvas.getContext) {
-	            ctx = canvas.getContext('2d');
-		        setInterval(draw, 36);
-		        for (var i = 0; i < noOfDrops; i++) {
-		            var fallingDr = new Object();
-		            fallingDr["image"] =  new Image();
-		        fallingDr.image.src = 'Ian/cookie.png';
-	                
-	            fallingDr["x"] = Math.random() * 600;
-	            fallingDr["y"] = Math.random() * 5;
-	            fallingDr["speed"] = 3 + Math.random() * 5;
-	            fallingDrops.push(fallingDr);
-	            }
-	        }
-	    }
-	    setup();
+			if (canvas.getContext) {
+				ctx = canvas.getContext('2d');
+				setInterval(draw, 36);
+				for (var i = 0; i < noOfDrops; i++) {
+					var fallingDr = new Object();
+					fallingDr["image"] =  new Image();
+					fallingDr.image.src = 'cookie.png';
+						
+					fallingDr["x"] = Math.random() * (width + imageSize) - imageSize;
+					fallingDr["y"] = Math.random() * height - (imageSize / 2);
+					fallingDr["speed"] = 3 + Math.random() * 5;
+					fallingDrops.push(fallingDr);
+				}
+			}
+		}
+		setup();
 	</script>
 </body>
 </html>
