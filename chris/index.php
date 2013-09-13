@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div>
-		<!-- Your message here -->
+		Chris Long
 	</div>
 
 	<!-- Javascript below -->
