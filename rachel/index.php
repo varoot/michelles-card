@@ -16,7 +16,10 @@
 </head>
 <body>
 	<div>
-		Hi this is Rachel
+	Hi Michelle!! I can't believe you're leaving me with a bunch of yucky boys :( !!<br>
+	It's okay, though, I wish you the absolute best in Korea and that God will work in so many ways in your life.<Br>
+	It was wonderful having you as a part of the team and I appreciate your cuteness, kindness, and unique laugh so much!<br>
+	May God bless you and keep you in all things to come. Take care of yourself and please send us updates from time to time!
 	</div>
 
 	<!-- Javascript below -->
