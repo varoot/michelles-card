@@ -17,6 +17,8 @@
 <body>
 	<div>
 		<!-- Your message here -->
+		Dear Michelle,<br/>
+		
 	</div>
 
 	<!-- Javascript below -->
