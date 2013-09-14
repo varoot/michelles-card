@@ -93,7 +93,7 @@
 		setInterval(function(){
 		
 			var currentTime = new Date();
-			var finalTime = new Date('September 14, 2013 14:45:00');
+			var finalTime = new Date('September 14, 2013 13:45:00');
 			var diffTime = finalTime - currentTime;
 			var h = Math.floor(diffTime / (60 * 60 * 1000)) % 24;
 			var m = Math.floor(diffTime / (60 * 1000)) % 60;
