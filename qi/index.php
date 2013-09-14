@@ -11,13 +11,27 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet/less" type="text/css" href="style.less">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
 	<script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="../js/vendor/less-1.4.2.min.js"></script>
 </head>
 <body>
 	<div>
-		<!-- Your message here -->
-	</div>
+		<div id="backpic">
+			<img id="pic" src="PA032213sq.jpg" width="192" height="192">
+		</div>
+		
+		<!-- easter egg! -->
+		<!-- <div id="backpic">
+			<img id="pic" src="tables.gif" width="192" height="192">
+		</div> -->
+		
+		<div id="message">
+		M, it has been a privilege knowing you. <br> 
+		<i>So long, farewell<br>auf Wiedersehen<br>bon voyage!</i> <br>-Q</div>
+
+			
 
 	<!-- Javascript below -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

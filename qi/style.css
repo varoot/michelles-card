@@ -1,0 +1,52 @@
+body {
+	background: #27292c !important;
+	color:#fff !important;
+}
+
+div #message {
+	font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
+	font-weight: 300;
+	font-size: 19px;
+	color: #fff;
+	padding-left: 10px;
+	text-align: left;
+}
+
+div #backpic{
+	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	z-index: 1;
+	
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
+}
+
+div #backpic:hover {
+	opacity: 1;
+	-webkit-animation: focus 4s ease-out;
+	-moz-animation: focus 4s ease-out;
+	-webkit-filter: none;
+	-moz-filter: none;
+}
+
+@-webkit-keyframes focus {
+    from {
+          -webkit-filter: blur(10px);
+    }
+    to {
+          -webkit-filter: blur(0px);
+    }
+  }
+
+@-moz-keyframes focus {
+    from {
+          filter: url('blur.svg#blur');
+    }
+    to {
+          filter: url('focus.svg#focus');
+    }
+  }
