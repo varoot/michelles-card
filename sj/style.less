@@ -3,7 +3,30 @@
 body {
 	background: @bgColor;
 	color: contrast(@bgColor, #222, #fff);
+	color: #fff;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 9px;
 	padding: 10px;
 	text-align: center;
+	height: 172px;
+	width: 172px;
+}
+
+body:hover {
+	#secret {
+		display: block;
+	}
+
+	#hi {
+		display: none;
+	}
+}
+
+#hi {
+	font-size: 21px;
+}
+
+#secret {
+	font-weight: 300px;
+	display: none;
 }

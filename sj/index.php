@@ -15,10 +15,17 @@
 	<script src="../js/vendor/less-1.4.2.min.js"></script>
 </head>
 <body>
-	<div>
-		<!-- Your message here -->
+<div>
+	<div id="hi"><br><br><del>Good bye</del><br>See you later!</div>
+	<div id="secret">
+		<del>Happy Birthday Michelle!</del> JK<br>
+		It's strange to think that you're leaving the country for good and be thousands of miles away. 
+		I'd like to thank you for being a caring sister I got to meet in my early freshman year.
+		Starting from being in the same lifegroup, and it feels like yesterday where we had to make that cardboard robot
+		and time flew, gosh. You'll be far away, but I know God will watch over you!
+		It's a good bye for now but see you later! Stay <b>faithful</b> and <b>joyful</b>!
 	</div>
-
+</div>
 	<!-- Javascript below -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
