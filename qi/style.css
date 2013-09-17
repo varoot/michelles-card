@@ -4,12 +4,13 @@ body {
 }
 
 div #message {
-	font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
-	font-weight: 300;
+	font-family: 'Avenir Next', 'Helvetica Neue', 'Open Sans', sans-serif;
+	font-weight: 100;
 	font-size: 19px;
 	color: #fff;
 	padding-left: 10px;
 	text-align: left;
+	text-shadow: 0 0 2px rgba(42, 42, 42, 0.66);
 }
 
 div #backpic{
