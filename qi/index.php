@@ -29,7 +29,7 @@
 		
 		<div id="message">
 		M, it has been a privilege knowing you. <br> 
-		<i>So long, farewell<br>auf Wiedersehen<br>bon voyage!</i> <br>-Q</div>
+		<i>So long, farewell<br>auf Wiedersehen<br>bon voyage!</i> <br><div align='center'>Q</div></div>
 
 			
 
