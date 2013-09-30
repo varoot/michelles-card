@@ -1,9 +1,78 @@
-@bgColor: #fc0;
+@bgColor: #0d0f1f;
 
 body {
 	background: @bgColor;
 	color: contrast(@bgColor, #222, #fff);
 	font-family: 'Open Sans', sans-serif;
-	padding: 10px;
+	padding: 0;
 	text-align: center;
+}
+
+.content {
+	width: 192px;
+	height: 192px;
+	position: relative;
+}
+
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	img {
+		vertical-align: top;
+	}
+}
+
+body:hover {
+	.nav {
+		opacity: 1;
+	}
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 30px;
+	opacity: 0;
+	transition: 0.2s;
+
+	button {
+		background: transparent;
+		border: none;
+		display: block;
+		margin: 0;
+		padding: 2px;
+		text-align: center;
+		vertical-align: top;
+		width: 30px;
+		height: 28px;
+
+		&:hover {
+			span {
+				background: #823;
+				color: #fc3;
+				text-shadow: 1px 2px #512;
+			}
+		}
+
+		span {
+			background: none;
+			border-radius: 4px;
+			color: #fc3;
+			display: block;
+			line-height: 24px;
+			width: 26px;
+			height: 26px;
+		}
+	}
+}
+
+#btn-up {
+	padding-bottom: 0;
+}
+
+#btn-down {
+	padding-top: 0;
 }
